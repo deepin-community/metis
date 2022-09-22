@@ -1,0 +1,62 @@
+Source: metis
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Anton Gladky <gladk@debian.org>
+Section: libs
+Priority: optional
+Rules-Requires-Root: no
+Build-Depends: cmake,
+               debhelper-compat (= 13)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/science-team/metis
+Vcs-Git: https://salsa.debian.org/science-team/metis.git
+Homepage: http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
+
+Package: libmetis-dev
+Architecture: any
+Section: libdevel
+Depends: libmetis5 (= ${binary:Version}),
+         ${misc:Depends}
+Conflicts: libscotchmetis-dev
+Description: Serial Graph Partitioning and Fill-reducing Matrix Ordering. Header
+ METIS is a set of serial programs for partitioning graphs, partitioning finite
+ element meshes, and producing fill reducing orderings for sparse matrices.
+ The algorithms implemented in METIS are based on the multilevel
+ recursive-bisection, multilevel k-way, and multi-constraint partitioning
+ schemes. The package contains a header-file.
+
+Package: libmetis-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Serial Graph Partitioning and Fill-reducing Matrix Ordering. Documentation
+ METIS is a set of serial programs for partitioning graphs, partitioning finite
+ element meshes, and producing fill reducing orderings for sparse matrices.
+ The algorithms implemented in METIS are based on the multilevel
+ recursive-bisection, multilevel k-way, and multi-constraint partitioning
+ schemes. The package contains examples and documentation.
+
+Package: libmetis5
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Serial Graph Partitioning and Fill-reducing Matrix Ordering
+ METIS is a set of serial programs for partitioning graphs, partitioning finite
+ element meshes, and producing fill reducing orderings for sparse matrices.
+ The algorithms implemented in METIS are based on the multilevel
+ recursive-bisection, multilevel k-way, and multi-constraint partitioning
+ schemes.
+
+Package: metis
+Architecture: any
+Section: math
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmetis5 (= ${binary:Version})
+Description: Serial Graph Partitioning and Fill-reducing Matrix Ordering. Binaries
+ METIS is a set of serial programs for partitioning graphs, partitioning finite
+ element meshes, and producing fill reducing orderings for sparse matrices.
+ The algorithms implemented in METIS are based on the multilevel
+ recursive-bisection, multilevel k-way, and multi-constraint partitioning
+ schemes. The package contains some binaries for graph analyzing.

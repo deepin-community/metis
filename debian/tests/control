@@ -1,0 +1,2 @@
+Tests: check1 build1
+Depends: metis, libmetis-dev, build-essential

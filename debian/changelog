@@ -1,0 +1,60 @@
+metis (5.1.0.dfsg-7) unstable; urgency=medium
+
+  * [57b088f] Use another graph files for tests
+  * [be06482] Ignore quilt dir
+  * [4edacc3] Add reprotest allow to fail
+
+ -- Anton Gladky <gladk@debian.org>  Tue, 19 May 2020 22:30:01 +0200
+
+metis (5.1.0.dfsg-6) unstable; urgency=medium
+
+  [ Jelmer Vernooĳ ]
+  * [eeab673] Remove unnecessary 'Testsuite: autopkgtest' header.
+              Fixed-Lintian-Tags: unnecessary-testsuite-autopkgtest-field
+  * [bf8c397] Transition to automatic debug package (from: libmetis5-dbg).
+
+  [ Anton Gladky ]
+  * [3944ce3] Set debhelper-compat version in Build-Depends.
+  * [887e011] Update Vcs-* headers from URL redirect.
+  * [4f3b4f9] Use canonical URL in Vcs-Git.
+  * [8954afb] Drop transition for old debug package migration.
+  * [bde44a2] Set compat-level 13
+  * [98ab07b] Add Rules-Requires-Root: no to d/control
+  * [40964db] Fix unit test
+
+ -- Anton Gladky <gladk@debian.org>  Sun, 17 May 2020 23:24:53 +0200
+
+metis (5.1.0.dfsg-5) unstable; urgency=medium
+
+  * [a633d07] Apply cme fix dpkg-control.
+  * [0cad704] Apply cme fix dpkg-copyright.
+
+ -- Anton Gladky <gladk@debian.org>  Sun, 04 Sep 2016 19:59:13 +0200
+
+metis (5.1.0.dfsg-4) unstable; urgency=medium
+
+  * [4d3a6a4] Update copyright-file. (Closes: #758675).
+    Thanks to Jonathan Nieder <jrnieder@gmail.com>
+
+ -- Anton Gladky <gladk@debian.org>  Mon, 01 Sep 2014 21:18:36 +0200
+
+metis (5.1.0.dfsg-3) unstable; urgency=medium
+
+  * [6d6d4cf] Set Standards-Versions: 3.9.5. No changes.
+  * [a28f7cf] Add autopkgtest.
+
+ -- Anton Gladky <gladk@debian.org>  Fri, 13 Jun 2014 21:49:33 +0200
+
+metis (5.1.0.dfsg-2) unstable; urgency=low
+
+  * [7327fa2] Fix typo in debian/copyright.
+  * [a41e1e7] Do not use --parallel option in dh. (Closes: #717363)
+  * [8d6adaa] Use canonical VCS.
+
+ -- Anton Gladky <gladk@debian.org>  Sat, 20 Jul 2013 20:42:20 +0200
+
+metis (5.1.0.dfsg-1) unstable; urgency=low
+
+  * Initial packaging. (Closes: #708045).
+
+ -- Anton Gladky <gladk@debian.org>  Mon, 13 May 2013 23:02:33 +0200
